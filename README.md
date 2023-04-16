@@ -1,5 +1,3 @@
-# Unicauca-VoluntariadoCGCAI
-## Universidad del Cauca
-Centro de Gestión de la Calidad y la Acreditación Institucional
+## Universidad del Cauca - Centro de Gestión de la Calidad y la Acreditación Institucional
 
-Guias
+Guias para la acreditación
