@@ -57,7 +57,82 @@ header h2{
 .titleLineTime h3{
   text-align: center; 
   padding-bottom: 5px;
+  color: #ccc;
 }
+
+/* COLLAPSE */
+  /* Estilo del boton colapsar*/
+  /* - timeline */
+    .btn-timeline {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .btn-timeline:focus,
+    .btn-timeline:hover {
+      outline: none;
+    }
+  /* - desc */
+    .btn-desc {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .btn-desc:focus,
+    .btn-desc:hover {
+      outline: none;
+    }
+
+  /* Estilos para el contenido a colapsar */
+    /* - timeline */
+  .timeline {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+  }
+    /* - desc */
+  .desc {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: #fff;
+  }
+
+  .desc p {
+    margin-top: 0;
+  }
+
+  .desc a {
+    display: block;
+  }
+
+  /* Estilos para el contenido a mostrar */
+    /* - timeline */
+  .timeline-expanded {
+    max-height: 10000px; /* ajusta la altura máxima deseada */
+    transition: max-height 0.3s ease-in;
+  }
+    .btn-timeline[aria-expanded="true"] h3 {
+      color: #fff;
+    }
+    /* - desc */
+  .desc-expanded {
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in;
+    color: #333;
+  }
+/* COLLAPSE - END */ 
 
 .hexa{
   border: 0px;
